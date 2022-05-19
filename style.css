@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;600;700&display=swap');
+:root{
+    --bodybg-color:#3E2093;
+    --bg-primary:#FA949D;
+    --text-color:#2B2C3E;
+    --secondary-color:#F9F9FB;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+body{
+    background-color: #3E2093;
+}
+.title{
+    align-items: center;
+    text-align: center;
+    font-weight: 700;
+    color: #fff;
+    margin-top: 50px;
+}
+.title h2{
+    font-weight: 600;
+}
+.title h5{
+    font-size: 15px;
+    margin-top: 25px;
+}
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+    width: 100px;
+    margin-top: 70px;
+    
+    
+}
+.i{
+    height: 100px;
+}
+.loc button, 
+.tlpn button, 
+.email button{
+    margin-right: 40px;
+    background-color: var(--bodybg-color);
+    outline: none;
+    border: none;
+    color: #fff;
+    font-size: 15px;
+    padding: 10px 25px;
+    border-radius: 10px;
+}
+.loc button i,
+.tlpn button i, 
+.email button i{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.loc button:focus,
+.tlpn button:focus,
+.email button:focus,
+.loc button:hover,
+.tlpn button:hover,
+.email button:hover{
+    background-color: var(--bg-primary);
+    transition: all 0.3s ease-in-out;
+}
+.tlpn button{
+    padding: 10px 60px;
+}
+.loc button{
+    padding: 10px 50px;
+}
+.container{
+    width: 50%;
+    background-color: #fff;
+}
+textarea{
+    height: 213px;
+    width: 335px !important;
+    background-color: #F9F9FB !important;
+}
+textarea:focus{
+    box-shadow: none !important;
+    border-color:#FA949D !important ;
+    caret-color: #FA949D;
+}
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus{
+    border: 1px solid var(--bg-primary) !important;
+    box-shadow: none;
+    caret-color: #FA949D;
+    
+}
+
+input [type="checkbox"]:checked{
+    color: #FA949D !important;
+}
+
+button[type="submit"],
+button[type="submit"]:focus,
+button[type="submit"]:hover,
+button[type="submit"]:disabled{
+    background-color: #f75a67;
+    color: #fff;
+    width: 35%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+.btn-primary:hover,
+.btn-primary:focus{
+    color: var(--bg-primary);
+    background-color: transparent;
+    border-color: var(--bg-primary);
+}
+input[type="radio"]:active{
+    color: var(--bg-primary);
+    background-color: transparent;
+    border-color: var(--bg-primary);
+}
+.btn-primary{
+    color: var(--text-color);
+    background-color: transparent;
+    border-color: #2B2C3E;
+}
